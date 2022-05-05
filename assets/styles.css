@@ -1,0 +1,357 @@
+@font-face {
+  font-family: 'Helvetica 25';
+  src: local('Helvetica 25 Ultra Light'), local('HelveticaNeue-UltraLight'),
+      url('/assets/fonts/HelveticaNeue-UltraLight.woff2') format('woff2'),
+      url('/assets/fonts/HelveticaNeue-UltraLight.woff') format('woff'),
+      url('/assets/fonts/HelveticaNeue-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: local('Roboto Light'), local('Roboto-Light'),
+      url('/assets/fonts/Roboto-Light.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Light.woff') format('woff'),
+      url('/assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+      url('/assets/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Regular.woff') format('woff'),
+      url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Condensed';
+  src: local('Helvetica Condensed'), local('Helvetica-Condensed'),
+      url('/assets/fonts/Helvetica-Condensed.woff2') format('woff2'),
+      url('/assets/fonts/Helvetica-Condensed.woff') format('woff'),
+      url('/assets/fonts/Helvetica-Condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, ul, li, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  box-sizing: border-box
+}
+
+.header {
+  background-image: url(./imagens/index-image.jpg);
+  background-size: 100vw;
+  /* background-clip: border-box; */
+  background-repeat: no-repeat;
+  /* padding-bottom: 300px; */
+  height: 90vh;
+  background-color: #29abe2;
+}
+
+.menu_container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 70px;
+}
+.menu {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  width: 120px;
+  /* height: 150px; */
+}
+img {
+  width: 100%;
+}
+
+.menu li {
+  /* padding-left: 10px; */
+  margin-left: 10px;
+  list-style-type: disc;
+  color: #fff
+}
+
+.menu li span {
+  position: relative;
+  left: -10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  font-family: Roboto Regular;
+  font-size: small;
+  text-decoration: none;
+  color: #fff
+}
+
+.prova {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100%;
+  color:#fff
+}
+
+.title {
+  padding-top: 6.0rem;
+}
+
+.titulo {
+  color: #fff;
+  font-family: 'Helvetica 25';
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+.subtitulo {
+  color: #fff;
+  font-family: 'Helvetica 25';
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.cadastro {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #29abe2;
+  color: #fff;
+}
+
+.formcadastro {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin: 0 30px;
+  width: 40vmax;
+  margin: 0 30px;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formControl input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  padding: 0;
+  color: #fff;
+  box-sizing: content-box;
+  font-family: 'Helvetica Condensed'
+}
+
+.formControl label {
+  font-size: .8rem;
+  font-family: 'Roboto Regular';
+}
+
+.formSubmit {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 10px; */
+  /* height: 10px; */
+}
+
+.btncadastrar {
+  background-color: #012d51;
+  color:#29abe2;
+  font-size: 1.5rem;
+  font-family: 'Helvetica 25';
+  padding: 10px 50px;
+  border: 0;
+  cursor: pointer;
+}
+
+.listacontainer {
+  color: #29abe2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 30px;
+  font-family: 'Helvetica 25';
+}
+.tablecontainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+table {
+  /* border: 2px solid white; */
+  /* border-style: none; */
+  /* border-color: black; */
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+.thbordal {
+  border-left: none;
+}
+.thbordar {
+  border-right: none;
+}
+
+.thbord_heard {
+  border-top: none;
+}
+
+.thbord_footer {
+  border-bottom: none;
+}
+
+
+th {
+  padding: 10px;
+  font-family: 'Roboto Regular';
+  font-size: 0.8rem;
+  border: 1px solid #29abe2;
+  color: #012d51;
+}
+
+td {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #29abe2;
+  word-wrap: break-word;
+  color: #808080;
+  text-align: center;
+}
+
+
+footer {
+  background-image: url('./imagens/rodape-desktop.jpg');
+  background-size: 100vw;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.conten_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.conten_footer p {
+  padding-top: 15px;
+  font-family: 'Roboto Light';
+  font-size: 1rem;
+  text-align: center;
+  color:  #ffff;
+}
+
+
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-image: url('./icones/topo-pag.svg');
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#btn-mobile {
+  display: none;
+  background-image: url('/assets/icones/hamburguer.svg');
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #btn-mobile {
+    display: block;
+    background-image: url('/assets/icones/hamburguer.svg');
+    color: transparent;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header {
+    background-image: url(./imagens/index-image-mobile.jpg);
+    height: 70vh;
+  }
+
+  .prova {
+    height: auto;
+  }
+  
+  .formcadastro {
+    width: 40vmax;
+  }
+
+  #menu {
+    display: block;
+    transition: .6s;
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 70px;
+    left: 0px;
+    background-color: #29abe2;
+    height: 30vh;
+    z-index: 1000;
+    visibility: hidden;
+  }
+
+  #btn-mobile.active {
+    background-image: url('/assets/icones/hamburguer-aberto0.svg');
+  }
+
+  #nav.active #menu {
+    display: block;
+    visibility: visible;
+    height: calc(100vh -70px);
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+  }
+
+}
